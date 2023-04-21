@@ -1,0 +1,51 @@
+body{
+    background-color: lightgray;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+input{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button{
+    padding: 5px 20px;
+    color: white;
+    border: 1px solid black;
+    margin: 20px 10px;
+    cursor: pointer;
+    background-color: black;
+}
+
+button:hover{
+    background-color: lavender;
+    color: black;
+    border: 1px solid black;
+}
+
+#posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    grid-gap: 30px;
+    padding: 0;
+}
+
+#posts li{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: darkslategray;
+}
+
+@media(max-width: 720px){
+    #posts{
+        grid-template-columns: 1fr;
+    }
+}
